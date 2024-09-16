@@ -15,7 +15,7 @@ phases:
   build:
     commands:
       # Update system packages
-      - apt-get update -y -q
+      # - apt-get update -y -q
       # Install dependencies
       - npm install --no-progress
       - SOURCE_BRANCH=$(echo $CODEBUILD_WEBHOOK_TRIGGER | awk '{split($0, a,"/"); print a[2]}')
